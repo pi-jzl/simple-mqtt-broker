@@ -4,6 +4,24 @@
   "bin": {
     "mqtt-broker": "./mqtt-broker.js"
   },
+  "description": "Stream-based Connection object for MQTT, extracted from MQTT.js",
+  "main": "mqtt-broker.js",
+  "contributors": [
+    "John Li <jzl+npm@planetinnovation.com.au> (https://github.com/pi-jzl)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pi-jzl/simple-mqtt-broker.git"
+  },
+  "keywords": [
+    "mqtt",
+    "broker"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pi-jzl/simple-mqtt-broker/issues"
+  },
+  "homepage": "https://github.com/pi-jzl/simple-mqtt-broker",
   "dependencies": {
     "mqtt-connection": "^4.0.0",
     "websocket-stream": "^5.1.2"
