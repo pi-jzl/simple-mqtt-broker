@@ -1,0 +1,11 @@
+{
+  "name": "simple-mqtt-broker",
+  "version": "1.0.0",
+  "bin": {
+    "mqtt-broker": "./mqtt-broker.js"
+  },
+  "dependencies": {
+    "mqtt-connection": "^4.0.0",
+    "websocket-stream": "^5.1.2"
+  }
+}
