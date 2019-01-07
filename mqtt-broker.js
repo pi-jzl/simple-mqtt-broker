@@ -38,14 +38,11 @@ function addEventListener(client) {
   })
 
   client.on('publish', function(packet) {
+    console.log('receive', packet.topic, packet.payload.toString())
     // loop through all existing clients and broadcast messages
     clients.forEach((clientX) =>{
       if (clientX.stream && clientX.stream.writable){
-        var options = {
-          topic: packet.topic,
-          payload: packet.payload.toString()
-        }
-        clientX.publish(options)
+        clientX.publish(packet)
       }
     })
   })
