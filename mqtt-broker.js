@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var websocket = require('websocket-stream')
 var WebSocketServer = require('ws').Server
 var Connection = require('mqtt-connection')
