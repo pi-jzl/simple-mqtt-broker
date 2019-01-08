@@ -1,6 +1,6 @@
 {
   "name": "simple-mqtt-broker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": {
     "mqtt-broker": "./mqtt-broker.js"
   },
