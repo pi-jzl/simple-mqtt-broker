@@ -4,7 +4,8 @@ var websocket = require('websocket-stream')
 var WebSocketServer = require('ws').Server
 var Connection = require('mqtt-connection')
 var http = require('http')
-var server = http.createServer().listen(1883)
+const portNumber = 1884
+var server = http.createServer().listen(portNumber)
 
 var wss = new WebSocketServer({ server: server })
 
@@ -18,7 +19,8 @@ wss.on('connection', function(ws) {
   addEventListener(client)
 })
 
-console.log('simple-mqtt-broker is ready on ws://localhost:1883')
+console.log(`simple-mqtt-broker is ready on ws://localhost:${portNumber}`)
+console.log(`Test connection on http://www.hivemq.com/demos/websocket-client/ with Host:localhost and Port:${portNumber}`)
 
 function addEventListener(client) {
   // handle the MQTT connection
