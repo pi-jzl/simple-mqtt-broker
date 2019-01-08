@@ -4,7 +4,7 @@ var websocket = require('websocket-stream')
 var WebSocketServer = require('ws').Server
 var Connection = require('mqtt-connection')
 var http = require('http')
-const portNumber = 1884
+const portNumber = 1883
 var server = http.createServer().listen(portNumber)
 
 var wss = new WebSocketServer({ server: server })
