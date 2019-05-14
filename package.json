@@ -24,6 +24,7 @@
   "homepage": "https://github.com/pi-jzl/simple-mqtt-broker",
   "dependencies": {
     "mqtt-connection": "^4.0.0",
+    "mqtt-packet": "^6.1.2",
     "websocket-stream": "^5.1.2"
   }
 }
